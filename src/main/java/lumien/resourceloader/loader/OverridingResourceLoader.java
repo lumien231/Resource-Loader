@@ -34,7 +34,7 @@ public class OverridingResourceLoader implements IResourcePack
 		}
 		else
 		{
-			File file = new File(new File(Minecraft.getMinecraft().mcDataDir, "oresources//" + rl.getResourceDomain()), rl.getResourcePath());
+			File file = new File(new File(Minecraft.getMinecraft().mcDataDir, "oresources/" + rl.getResourceDomain()), rl.getResourcePath());
 
 			String realFileName = file.getCanonicalFile().getName();
 			if (!realFileName.equals(file.getName()))
